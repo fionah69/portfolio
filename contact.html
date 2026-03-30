@@ -1,0 +1,95 @@
+<!-- Paste this into EVERY HTML file and customise the <title> and <main> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- REQUIRED for responsive design on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Fionah Kamau — Computing student at Jomo Kenyatta University of Agriculture and Technology">
+    <title>Fionah Kamau | Portfolio</title>
+    <link rel="icon" href="data:,">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Skip link: allows keyboard users to skip the nav -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Fionah Kamau</a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <!-- Add class="active" to the current page's link -->
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- PAGE-SPECIFIC CONTENT GOES HERE -->
+        <h1>Contact Me</h1>
+        <p>If you'd like to get in touch, feel free to reach out through any of the following channels:</p>
+        <ul>
+            <li>Email: <a href="mailto:fionahkamau@example.com">fionahkamau@example.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/fionahkamau" target="_blank"
+                    rel="noopener noreferrer">linkedin.com/in/fionahkamau</a></li>
+            <li>GitHub: <a href="https://github.com/fionahkamau" target="_blank"
+                    rel="noopener noreferrer">github.com/fionahkamau</a></li>
+        </ul>
+        <p>I'm always open to discussing new projects, collaborations, or opportunities. Don't hesitate to reach out!
+        </p>
+        <section class="contact-section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <!-- action="#" keeps the form on the same page (no backend for this lab) -->
+                <form class="contact-form" action="#" method="POST" novalidate>
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="">Select a subject</option>
+                            <option>Collaboration</option>
+                            <option>Employment Opportunity</option>
+                            <option>General Enquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="msg">Message</label>
+                        <textarea id="msg" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Fionah Kamau — ICS 2215, Dept. of Computing</p>
+        </div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

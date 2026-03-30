@@ -1,0 +1,106 @@
+<!-- Paste this into EVERY HTML file and customise the <title> and <main> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- REQUIRED for responsive design on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Fionah Kamau — Computing student at Jomo Kenyatta University of Agriculture and Technology">
+    <title>Fionah Kamau | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Skip link: allows keyboard users to skip the nav -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Fionah Kamau</a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <!-- Add class="active" to the current page's link -->
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- PAGE-SPECIFIC CONTENT GOES HERE -->
+        <h1>Contact Me</h1>
+        <p>If you'd like to get in touch, feel free to reach out through any of the following channels:</p>
+        <ul>
+            <li>Email: <a href="mailto:fionahkamau@example.com">fionahkamau@example.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/fionahkamau" target="_blank"
+                    rel="noopener noreferrer">linkedin.com/in/fionahkamau</a></li>
+            <li>GitHub: <a href="https://github.com/fionahkamau" target="_blank"
+                    rel="noopener noreferrer">github.com/fionahkamau</a></li>
+        </ul>
+        <p>I'm always open to discussing new projects, collaborations, or opportunities. Don't hesitate to reach out!
+        </p>
+        <section class="about-section">
+            <div class="container about-grid">
+
+                <aside>
+                    <!-- Profile photo -->
+                    <img src="images/profile.jpg" alt="Fionah Kamau — profile photo" class="profile-img">
+                    <h3>Fionah Kamau</h3>
+                    <p class="role">Computing Student, Year 2</p>
+                </aside>
+
+                <div>
+                    <h2>About Me</h2>
+                    <p>I am a dedicated computing student at Jomo Kenyatta University of Agriculture and Technology,
+                        with a passion for networking and web development. I strive to combine theoretical knowledge
+                        with practical application to create innovative solutions.</p>
+                    <h3>Technical Skills</h3>
+                    <ul class="skills-list">
+                        <li>Computer Networking (OSI, TCP/IP, subnetting)</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Cisco Packet Tracer</li>
+                        <!-- Add more skills -->
+                    </ul>
+
+                    <h3>Education</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Qualification</th>
+                                <th>Institution</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>BSc Computing</td>
+                                <td>[University]</td>
+                                <td>2023–Present</td>
+                            </tr>
+                            <tr>
+                                <td>KCSE</td>
+                                <td>[School Name]</td>
+                                <td>2022</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Fionah Kamau — ICS 2215, Dept. of Computing</p>
+        </div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
